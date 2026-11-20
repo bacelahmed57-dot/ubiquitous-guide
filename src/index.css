@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #0aad0a;
+    --primary-hover: #088a08;
+    --primary-light: #e8f7e8;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #21313c;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    border: none;
+    text-align: left;
+  }
+}
+
+/* Custom FreshCart Utilities */
+.btn-primary {
+  background-color: #0aad0a;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #088a08;
+}
+
+.text-primary-fresh {
+  color: #0aad0a;
+}
+
+.bg-primary-fresh {
+  background-color: #0aad0a;
+}
+
+.border-primary-fresh {
+  border-color: #0aad0a;
+}
+
+/* Swiper custom styling */
+.swiper-pagination-bullet-active {
+  background: #0aad0a !important;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
